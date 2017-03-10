@@ -15,3 +15,18 @@ var str = "Hello, playground"
 //
 //이번 주 일요일 18:00
 //깃허브에 업로드 해주세요.
+
+var score:Int = 78
+
+if score <= 25 {
+    print("귀하의 등급은 F입니다.")
+}
+else if score <= 50 {
+    print("귀하의 등급은 C입니다.")
+}
+else if score <= 75 {
+    print("귀하의 등급은 B입니다.")
+}
+else {
+    print("귀하의 등급은 A입니다.")
+}

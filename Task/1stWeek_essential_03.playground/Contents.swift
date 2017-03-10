@@ -20,3 +20,7 @@ var str = "Hello, playground"
 //마감시간
 //
 //선택사항 입니다.
+
+for figure in 1...100{
+    print(figure)
+}

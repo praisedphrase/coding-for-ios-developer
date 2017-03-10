@@ -12,3 +12,41 @@ var str = "Hello, playground"
 //마감시간
 //
 //이번 주 일요일 18:00
+
+class calculator {
+    var no1:Int?
+    var no2:Int?
+    
+    init(no1:Int, no2:Int) {
+        self.no1 = no1
+        self.no2 = no2
+    }
+    
+    func plus() {
+        no1! + no2!
+    }
+    
+    func minus() {
+        no1! - no2!
+    }
+    
+    func multi() {
+        no1! * no2!
+    }
+    
+    func div() {
+        no1! / no2!
+    }
+}
+
+//var ex1 = calculator(no1: 8, no2: 9)
+//    ex1.plus()
+//    ex1.minus()
+//    ex1.multi()
+//    ex1.div()
+
+var ex2 = calculator(no1: 98, no2: 77)
+    ex2.plus()
+    ex2.minus()
+    ex2.multi()
+    ex2.div()
