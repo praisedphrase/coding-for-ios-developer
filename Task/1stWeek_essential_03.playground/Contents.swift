@@ -21,6 +21,31 @@ var str = "Hello, playground"
 //
 //선택사항 입니다.
 
-for figure in 1...100{
-    print(figure)
+//for figure in 1...100{
+//    print(figure)
+//}
+
+func printDiamond(_ number: Int) {
+    var result = ""
+    for i in 1...(number * 2 - 1) {
+        for j in 1...(number * 2 - 1) {
+            if i <= number {
+                if j > number - i && j < number + i {
+                    result += "1"
+                } else {
+                    result += "0"
+                }
+            } else {
+                if j > i - number && j < number * 3 - i {
+                    result += "1"
+                } else {
+                    result += "0"
+                }
+            }
+        }
+        print(result)
+        result = ""
+    }
 }
+
+printDiamond(3)

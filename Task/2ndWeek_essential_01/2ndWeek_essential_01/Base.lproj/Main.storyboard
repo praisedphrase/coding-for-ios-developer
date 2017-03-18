@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nd Detail View Controller-->
+        <scene sceneID="NxI-zk-ZJl">
+            <objects>
+                <viewController id="Rny-hd-9NC" customClass="_ndDetailViewController" customModule="_ndWeek_essential_01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zrR-On-73v"/>
+                        <viewControllerLayoutGuide type="bottom" id="sSc-l0-0IH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3rG-GR-6Sf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aZ8-9D-fCQ">
+                                <rect key="frame" x="16" y="83" width="343" height="635"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">I am in exile, a sojourner 
+A citizen of some other place 
+All I've seen is just a glimmer in a shadowy mirror 
+But I know, one day we'll see face to face 
+
+I am a nomad, a wanderer
+I have nowhere to lay my head down
+There's no point in putting roots too deep when I'm moving on
+Not settling for this unsettling town
+
+My heart is filled with songs of forever
+The city that endures when all is made new
+I know I don't belong here, I'll never
+Call this place my home, I'm just passing through
+
+I am a pilgrim, a voyager
+I won't rest until my lips touch the shore
+Of the land that I've been longing for as long as I've lived
+Where they'll be no penalties anymore
+
+My heart is filled with songs of forever
+The city that endures when all is made new
+I know I don't belong here, I'll never
+Call this place my home, I'm just passing through</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="둘째 페이지 입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnj-sj-Tfb">
+                                <rect key="frame" x="26" y="28" width="333" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dnj-sj-Tfb" firstAttribute="trailing" secondItem="aZ8-9D-fCQ" secondAttribute="trailing" id="0nZ-m6-X2y"/>
+                            <constraint firstItem="Dnj-sj-Tfb" firstAttribute="top" secondItem="zrR-On-73v" secondAttribute="bottom" constant="8" symbolic="YES" id="3DM-ne-S2e"/>
+                            <constraint firstItem="aZ8-9D-fCQ" firstAttribute="leading" secondItem="3rG-GR-6Sf" secondAttribute="leadingMargin" id="Zo9-Pf-H7m"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="aZ8-9D-fCQ" secondAttribute="bottom" constant="-51" id="b1Q-L8-G8a"/>
+                            <constraint firstItem="Dnj-sj-Tfb" firstAttribute="trailing" secondItem="3rG-GR-6Sf" secondAttribute="trailingMargin" id="iAc-vY-3E6"/>
+                            <constraint firstItem="aZ8-9D-fCQ" firstAttribute="top" secondItem="Dnj-sj-Tfb" secondAttribute="bottom" constant="34" id="qwo-Jt-dXR"/>
+                            <constraint firstItem="Dnj-sj-Tfb" firstAttribute="leading" secondItem="3rG-GR-6Sf" secondAttribute="leadingMargin" constant="10" id="r1e-be-0li"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="aZ8-9D-fCQ" id="VEU-13-uOJ"/>
+                        <outlet property="textLabel" destination="Dnj-sj-Tfb" id="3iV-Lx-qR1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BKU-C5-2cQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="861"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="aSB-nG-kqq">
+            <objects>
+                <tableViewController id="iQn-9Y-s4e" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="127" sectionHeaderHeight="28" sectionFooterHeight="28" id="gsm-4c-pnm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="127" id="lPf-DL-7hj">
+                                <rect key="frame" x="0.0" y="28" width="375" height="127"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lPf-DL-7hj" id="NmE-Si-4h1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGu-wn-udd">
+                                            <rect key="frame" x="8" y="8" width="359" height="30"/>
+                                            <state key="normal" title="첫 페이지로">
+                                                <color key="titleColor" red="0.24952885082616785" green="0.74714621113989632" blue="0.19649861928490128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="Yx4-fo-dru" kind="showDetail" identifier="detailFirst" id="NNV-qF-rKB"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnQ-3D-jcL">
+                                            <rect key="frame" x="8" y="46" width="359" height="30"/>
+                                            <state key="normal" title="둘째 페이지로">
+                                                <color key="titleColor" red="0.98824077072538863" green="0.2824989287076749" blue="0.32488125257741074" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="Rny-hd-9NC" kind="showDetail" id="v1e-i7-tfC"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NGu-wn-udd" firstAttribute="trailing" secondItem="cnQ-3D-jcL" secondAttribute="trailing" id="4qd-Tv-nDN"/>
+                                        <constraint firstItem="NGu-wn-udd" firstAttribute="trailing" secondItem="NmE-Si-4h1" secondAttribute="trailingMargin" id="TFg-Pb-V8P"/>
+                                        <constraint firstItem="cnQ-3D-jcL" firstAttribute="top" secondItem="NGu-wn-udd" secondAttribute="bottom" constant="8" symbolic="YES" id="UkO-Wt-gtU"/>
+                                        <constraint firstItem="NGu-wn-udd" firstAttribute="top" secondItem="NmE-Si-4h1" secondAttribute="topMargin" id="g9f-wI-2FS"/>
+                                        <constraint firstItem="NGu-wn-udd" firstAttribute="leading" secondItem="NmE-Si-4h1" secondAttribute="leadingMargin" id="iwm-RF-6FT"/>
+                                        <constraint firstItem="NGu-wn-udd" firstAttribute="leading" secondItem="cnQ-3D-jcL" secondAttribute="leading" id="uBr-fa-VZ9"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iQn-9Y-s4e" id="e2m-Ii-r45"/>
+                            <outlet property="delegate" destination="iQn-9Y-s4e" id="Syu-be-kFS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="e99-sZ-yFS"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NBA-ew-gzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.79999999999995" y="135.38230884557723"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="uLo-QJ-EAw">
+            <objects>
+                <viewController id="Yx4-fo-dru" customClass="DetailViewController" customModule="_ndWeek_essential_01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="evd-Ks-chu"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vtx-0Z-SGh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BWg-hO-6Yk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="첫 번째 이동 페이지입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4Y-Nw-VHT">
+                                <rect key="frame" x="16" y="20" width="343" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="dBl-h5-0Ts"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R4Z-ah-sfX">
+                                <rect key="frame" x="16" y="69" width="343" height="451"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">The tyranny of deterioration 
+Worries me that it's all just a waste of time 
+Taking one step forward, two steps back 
+Still I believe there's a breadth through the thorns 
+And I believe the summer's warm 
+And I believe that it's ever bright beyond this black
+
+So keep holding on to hope without assurance
+Holding on to a memory of light
+But will the morning come? For all I know
+We’ll never see the sun, but together we’ll fight the long defeat
+
+Suffering that I see all around
+It's enough to keep me crashing down
+Till I, I'm wrecked and wreathing from these falls
+Still I believe there's a word in the wire
+And I believe there's a way through the fire
+And I, believe, there's a joy that blooms beyond these walls
+
+So keep holding on to hope without assurance
+Holding on to a memory of light
+But will the morning come? For all I know
+We’ll never see the sun, but together we’ll fight the long defeat</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b4Y-Nw-VHT" firstAttribute="leading" secondItem="R4Z-ah-sfX" secondAttribute="leading" id="0J9-sc-aFN"/>
+                            <constraint firstItem="R4Z-ah-sfX" firstAttribute="top" secondItem="b4Y-Nw-VHT" secondAttribute="bottom" constant="8" symbolic="YES" id="Jfq-Xb-kqS"/>
+                            <constraint firstItem="Vtx-0Z-SGh" firstAttribute="top" secondItem="R4Z-ah-sfX" secondAttribute="bottom" constant="147" id="KFg-cw-RFp"/>
+                            <constraint firstItem="b4Y-Nw-VHT" firstAttribute="top" secondItem="evd-Ks-chu" secondAttribute="bottom" id="ZKA-wN-HPQ"/>
+                            <constraint firstItem="b4Y-Nw-VHT" firstAttribute="leading" secondItem="BWg-hO-6Yk" secondAttribute="leadingMargin" id="aZy-SR-CVr"/>
+                            <constraint firstItem="b4Y-Nw-VHT" firstAttribute="trailing" secondItem="BWg-hO-6Yk" secondAttribute="trailingMargin" id="d4I-IY-AXt"/>
+                            <constraint firstItem="b4Y-Nw-VHT" firstAttribute="trailing" secondItem="R4Z-ah-sfX" secondAttribute="trailing" id="dst-CT-fZP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="R4Z-ah-sfX" id="aY5-sa-bb2"/>
+                        <outlet property="titleLabel" destination="b4Y-Nw-VHT" id="8Iy-Fh-prx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3dO-3e-oar" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612" y="136.28185907046478"/>
+        </scene>
+        <!--Navi View Controller-->
+        <scene sceneID="art-mb-Ggf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4iu-ec-unp" customClass="NaviViewController" customModule="_ndWeek_essential_01" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w1g-bN-wAe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iQn-9Y-s4e" kind="relationship" relationship="rootViewController" id="dAX-p6-Q0h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HR7-op-hSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114.40000000000001" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+</document>
